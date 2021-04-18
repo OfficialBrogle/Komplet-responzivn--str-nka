@@ -1,0 +1,373 @@
+/*GENERAL*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*NAVIGATION*/
+
+.container {
+    max-width: 75em;
+    /*1200/16*/
+    padding: 0 1.5em;
+    /*24/16*/
+    margin: 0 auto;
+}
+
+ul {
+    padding: 0;
+}
+
+ul,
+li {
+    display: inline-block;
+    list-style: none;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-flex {
+    display: flex;
+    /*horizontálně doprostřed - musím přidat justify-content*/
+    justify-content: center;
+    /*horizonálně doprostřed*/
+    align-items: center;
+    /*vodorovně doprostřed*/
+}
+
+.menubtn {
+    display: none;
+}
+
+nav {
+    background: #ffffff;
+    font-size: 0.9em;
+}
+
+nav li {
+    padding-left: 4.1em;
+    font-size: 1.4em;
+}
+
+.small {
+    font-size: 0.5em
+}
+
+nav a {
+    color: #03b0c5;
+    transition: all 0.5s ease-out;
+}
+
+nav li a:hover,
+nav li a:focus {
+    background-color: #03b0c5;
+    color: white;
+    padding: 0.8em;
+    border-radius: 1px;
+}
+
+
+/*HEADER*/
+
+header {
+    background: #00afc4 url('../../../DU_8_2/img/backcover.png') center;
+    margin-bottom: 0;
+    position: relative;
+}
+
+header h2 {
+    margin-top: 0;
+    padding-top: 3.625em;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 0.0625em
+}
+
+.fas {
+    margin-top: .5em;
+    font-size: 2em;
+}
+
+.fas:hover {
+    transform: skewX(30deg) rotate(15deg)/*zešikmí se a diagonálně zkroutí*/
+    ;
+    transition: all 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+header h1 {
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    font-size: 10em;
+    letter-spacing: -5px;
+    position: relative;
+    z-index: 2;
+}
+
+.triangle {
+    background: url('../../../DU_8_2/img/triangle.png') top repeat-x;
+    height: 0.75em;
+    margin-top: -0.75em;
+    position: relative;
+    z-index: 3;
+}
+
+.arrow {
+    position: relative;
+    background: url('../../../DU_8_2/img/arrow.png') center center no-repeat;
+    color: black;
+    text-transform: uppercase;
+    z-index: 4;
+    padding: 2em 3.5em;
+    font-size: 1.0625em;
+    font-weight: 700;
+    letter-spacing: -0.0625em;
+    left: 50%;
+    margin-left: -8.75em;
+    transition: all 0.5s ease-out;
+}
+
+.arrow:hover {
+    opacity: 0.9;
+    color: rgb(25, 33, 77);
+}
+
+
+/*je responzivní*/
+
+
+/*ARTICLE*/
+
+article {
+    background: #edf3f3 url('../../../DU_8_2/img/hash.gif') bottom repeat-x;
+    text-align: center;
+    padding-bottom: 2.5em;
+}
+
+article p {
+    margin-top: 0;
+    padding-top: 3.5em;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+article h3 {
+    margin-top: 0;
+    padding-top: 2.625em;
+    margin-bottom: 0.1em;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.ornot {
+    font-size: 1em;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 7em;
+}
+
+article ul li {
+    padding-right: 2.5em;
+}
+
+
+/*MAIN*/
+
+main {
+    text-align: center;
+}
+
+.flex-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+section {
+    max-width: 20em;
+    padding: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+section h1 {
+    color: #121b21;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+section a {
+    text-decoration: underline;
+    color: #009ce0;
+}
+
+section a:hover {
+    text-decoration: underline;
+    color: #42565f;
+}
+
+.higher {
+    margin-top: -1.5625em;
+}
+
+main h2 {
+    background: url('../../../DU_8_2/img/dot.gif') center repeat-x;
+    margin-top: 3.4375em;
+    margin-bottom: 2.1875em;
+}
+
+.whatwedo {
+    background: #222;
+    color: #fff;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+
+/*ASIDE*/
+
+aside {
+    margin-top: 6.25em;
+    padding-bottom: 3.75em;
+    background: transparent url('../../../DU_8_2/img/hash.gif') bottom repeat-x;
+    text-align: center;
+}
+
+aside h1 {
+    font-size: 2.5em;
+    display: inline-flex;
+}
+
+.dot {
+    background: url('../../../DU_8_2/img/dot.gif') top repeat-x;
+}
+
+.link {
+    font-size: 0.6em;
+    background: url('../../../DU_8_2/img/bluearrow.png') center no-repeat;
+    padding: 1em;
+    color: #fff;
+    margin-left: 1.5em;
+    font-weight: 700;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background: #edf3f3;
+    text-align: center;
+    padding-top: 3.125em;
+    padding-bottom: 3.325em;
+}
+
+footer ul li {
+    padding-left: 3em;
+}
+
+footer ul li:nth-child(1) {
+    padding-left: 0;
+}
+
+footer p {
+    padding-bottom: 2em;
+    margin-bottom: 0;
+    font-size: 0.8em;
+}
+
+#copy {
+    margin-top: 3.75em;
+}
+
+.tildefoot {
+    display: none;
+}
+
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 878px) {
+    nav li {
+        font-size: 1em;
+        padding-left: 2em;
+    }
+    .logo {
+        display: block;
+        position: absolute;
+        left: 20px;
+    }
+    .logo img {
+        max-width: 75%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .flex-main {
+        display: grid;
+        justify-content: space-around;
+    }
+    section a {
+        background: #00adc4;
+        color: #fff;
+        font-size: 1em;
+        padding: 0.5em;
+        border-radius: 4px;
+        transition: all 0.5s ease-out;
+    }
+    .higher a {
+        line-height: 36px;
+    }
+    section a:hover {
+        background: black;
+        color: #e6e6e6
+    }
+    aside {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    header h1 {
+        font-size: 8em;
+        width: 90%
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header h1 {
+        font-size: 7em;
+        width: 90%
+    }
+    article h3 {
+        margin-top: 0;
+        padding-top: 1.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 6em;
+        width: 90%
+    }
+}
